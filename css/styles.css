@@ -152,9 +152,31 @@ label[class="selection_intro"] {
         margin-bottom:40px;
     }
 
-.form-group {
-    display:flex;
-    justify-content: space-between;
-}
+    .form-group {
+        display:flex;
+        justify-content: space-between;
+    }
 
+    .form-group label {
+        flex-basis: 140px;
+        margin: 15px 0px;
+    }
+
+    .form-group input {
+        flex-basis: 400px;
+    }
+
+    .form-group select {
+        flex-basis: 400px;
+    }
+
+    label[class="selection_intro"] {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contactinfo_section legend {
+        margin-bottom: 30px;
+    }
 }
