@@ -13,12 +13,13 @@ input[placeholder]
 /* This sets max width of 
 the container and centers form. */
 
-#outer_container {
+#header_container,
+#newsletter_container {
     max-width:400px;
     margin: auto;
 }
 
-#inner_container {
+#form_container {
     max-width:350px;
     margin: auto;
 }
@@ -45,6 +46,8 @@ button {
    font-size: 16px;
    font-weight: 600;
    border-radius: 5px;
+   margin-top: 20px; 
+   height: 50px;
 }
 
 /* This makes form labels on their 
@@ -92,13 +95,20 @@ form {
 
 
 .hr {
-    border-top: 1px solid;
+    border-top: 2px solid;
     color: #162736;
 }
+
+.hr1 {
+    border-top: 5px solid;
+    color: #162736;
+}
+
 
 legend {
     font-size:30px;
     font-weight:bold;
+    margin-top: 10px;
 }
 
 input, textarea, select {
@@ -113,4 +123,33 @@ input {
 label[class="selection_intro"] {
     display: block;
     margin-top: 20px;
+}
+
+.form-bottom {
+    margin-bottom:20px;
+}
+
+/* 🤖 Media Queries 🤖*/
+
+@media (min-width: 768px) {
+    #header_container {
+        max-width:700px;
+        margin: auto;
+    }
+    
+    #form_container,
+    #newsletter_container {
+        max-width:600px;
+        margin: auto;
+    }
+
+    .header {
+        padding: 10px 10px; 
+        text-align:center;
+    }
+
+    .bottom_header {
+        margin-bottom:40px;
+    }
+
 }
